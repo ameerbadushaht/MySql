@@ -1,5 +1,5 @@
 
-//Create the following tables in a database named "roster". Make sure that your database and tables are named exactly as follows including matching case.
+--Create the following tables in a database named "roster". Make sure that your database and tables are named exactly as follows including matching case.
 
 DROP TABLE IF EXISTS Member;
 DROP TABLE IF EXISTS `User`;
@@ -32,7 +32,7 @@ CREATE TABLE Member (
 
 
 
-//You will normalize the following data (each user gets different data), and insert the following data items into your database, creating and linking all the foreign keys properly. Encode instructor with a role of 1 and a learner with a role of 0.
+--You will normalize the following data (each user gets different data), and insert the following data items into your database, creating and linking all the foreign keys properly. Encode instructor with a role of 1 and a learner with a role of 0.
 
 Lyndsay, si106, Instructor
 Eleanor, si106, Learner
@@ -57,9 +57,8 @@ SELECT `User`.name, Course.title, Member.role
     ORDER BY Course.title, Member.role DESC, `User`.name
 The order of the data and number of rows that comes back from this query should be the same as above. There should be no missing or extra data in your query.
 
-?>
-Here is a set of insert statements to achieve this assignment. Use can simply copy and paste the code into a file named as "roster.json" , and submit it.
-// code is given below
+--Here is a set of insert statements to achieve this assignment. Use can simply copy and paste the code into a file named as "roster.json" , and submit it.
+-- code is given below
 
 
 // Database 'roster'
