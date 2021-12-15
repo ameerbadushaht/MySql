@@ -1,3 +1,9 @@
+<?php
+foreach($roster as $entry) {
+    $role = $entry[2] == 1 ? 'Instructor' : 'Learner';
+    echo "$entry[0], $entry[1], $role\n";
+}
+?>
 //Create the following tables in a database named "roster". Make sure that your database and tables are named exactly as follows including matching case.
 
 DROP TABLE IF EXISTS Member;
